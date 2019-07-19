@@ -83,12 +83,12 @@ class PrayTimeCard extends StatelessWidget {
                         Padding(padding: EdgeInsets.only(right: MediaQuery.of(context).padding.right+10)),
                         Opacity(
                           opacity: 0.76,
-                          child: Text("Magrib",style: Theme.of(context).textTheme.title.copyWith(fontWeight: FontWeight.w300,fontSize: 25),textScaleFactor: 1,),
+                          child: Text("Magrib",style: Theme.of(context).textTheme.title.copyWith(fontWeight: FontWeight.w300,fontSize: MediaQuery.of(context).size.height >1000 && MediaQuery.of(context).orientation==Orientation.portrait ? 30 : MediaQuery.of(context).size.height >800 && MediaQuery.of(context).orientation==Orientation.landscape ? 30 : 25),textScaleFactor: 1,),
                         ),
                       ],
                     ),
-                    Text("6:32"+" PM",style: Theme.of(context).textTheme.title.copyWith(fontWeight: FontWeight.w300,fontSize: 31),textScaleFactor: 1,),
-                    Text("in "+"25"+" Minutes",style: TextStyle(fontWeight: FontWeight.w100,fontSize: 15,fontFamily: 'SFPro',color: Color(0xFFc9c9c9)),textScaleFactor: 1,),
+                    Text("6:32"+" PM",style: Theme.of(context).textTheme.title.copyWith(fontWeight: FontWeight.w300,fontSize: MediaQuery.of(context).size.height >1000 && MediaQuery.of(context).orientation==Orientation.portrait ? 36 : MediaQuery.of(context).size.height >800 && MediaQuery.of(context).orientation==Orientation.landscape ? 36 : 31),textScaleFactor: 1,),
+                    Text("in "+"25"+" Minutes",style: TextStyle(fontWeight: FontWeight.w100,fontSize: MediaQuery.of(context).size.height >1000 && MediaQuery.of(context).orientation==Orientation.portrait ? 20 : MediaQuery.of(context).size.height >800 && MediaQuery.of(context).orientation==Orientation.landscape ? 20 : 15,fontFamily: 'SFPro',color: Color(0xFFc9c9c9)),textScaleFactor: 1,),
                   ],
                 ),
                 Placeholder(
@@ -100,7 +100,7 @@ class PrayTimeCard extends StatelessWidget {
             ),
           ),
           Padding(padding: EdgeInsets.only(top: 20)),
-          Text("All Times for Hamiltion",style: Theme.of(context).textTheme.title.copyWith(fontWeight: FontWeight.w500,color: Theme.of(context).highlightColor,fontSize: 15),textScaleFactor: 1,)
+          Text("All Times for Hamiltion",style: Theme.of(context).textTheme.title.copyWith(fontWeight: FontWeight.w500,color: Theme.of(context).highlightColor,fontSize: MediaQuery.of(context).size.height >1000 && MediaQuery.of(context).orientation==Orientation.portrait ? 20 : MediaQuery.of(context).size.height >800 && MediaQuery.of(context).orientation==Orientation.landscape ? 20 : 15),textScaleFactor: 1,)
         ],
       ),
     );
