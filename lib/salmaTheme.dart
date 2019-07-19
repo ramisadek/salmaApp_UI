@@ -10,6 +10,7 @@ class SalmaTheme {
       hintColor: Color(0xFF6ac5a2),
       cardColor: Color(0xFF59b28e),
       secondaryHeaderColor: Color(0xFF00ffda),
+      canvasColor: Color(0xFF989ba5),
       selectedRowColor: Color(0xFFadcec0),
       textTheme: TextTheme(
           title: TextStyle(
