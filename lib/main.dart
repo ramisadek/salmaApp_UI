@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_demo/salmaTheme.dart';
+import 'package:flutter_demo/sign-up_screen.dart';
 
 import 'forgetPassword_screen.dart';
 import 'home_screen.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: SalmaTheme().mainTheme,
-      home: ForgetPasswordScreen(),
+      home: SignupScreen(),
     );
   }
 }
