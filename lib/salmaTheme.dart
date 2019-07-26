@@ -13,6 +13,7 @@ class SalmaTheme {
       canvasColor: Color(0xFF989ba5),
       selectedRowColor: Color(0xFFadcec0),
       disabledColor: Colors.black,
+      indicatorColor: Color(0xFF161616),
       textTheme: TextTheme(
           title: TextStyle(
         color: Colors.white,

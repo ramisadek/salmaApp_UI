@@ -36,7 +36,6 @@ class WideCard extends StatelessWidget {
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: [Color(0xFF6ad4d2),Color(0xFF6ac5a2),Colors.transparent],
-
         )
       ),
     );
